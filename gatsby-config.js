@@ -5,6 +5,7 @@ module.exports = (options) => {
 
    return {
        plugins: [
+           `gatsby-plugin-postcss`,
            useAirtable.enabled && {
                resolve: 'gatsby-source-airtable',
                options: { ...useAirtable.options }
